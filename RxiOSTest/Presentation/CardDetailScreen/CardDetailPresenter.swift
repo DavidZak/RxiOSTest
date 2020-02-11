@@ -37,7 +37,7 @@ class CardDetailPresenter: BasePresenter<Void> {
         
         title = card.asObservable().map { $0?.name ?? "" }.asDriver(onErrorDriveWith: .empty())
         description = card.asObservable().map { $0?.oracleText ?? "" }.asDriver(onErrorDriveWith: .empty())
-        artist = card.asObservable().map { $0?.artist ?? "" }.asDriver(onErrorDriveWith: .empty())
+        artist = card.asObservable().map { String(format: "artist".localized, $0?.artist ?? "") }.asDriver(onErrorDriveWith: .empty())
         image = card.asObservable().map { $0?.imageUris?.large ?? "" }.asDriver(onErrorDriveWith: .empty())
     }
     
