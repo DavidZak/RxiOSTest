@@ -35,6 +35,7 @@ class MainViewController: BaseViewController<Void> {
             .map { $0 ?? "" }
             .debounce(.milliseconds(500)) // Wait 0.5 for changes.
             .distinctUntilChanged() // If they didn't occur, check if the new value is the same as old.
+            .filter { !$0.isEmpty }
             .drive(onNext: { [weak self] query in
                 self?.mainPresenter.loadCards(query: query)
             })

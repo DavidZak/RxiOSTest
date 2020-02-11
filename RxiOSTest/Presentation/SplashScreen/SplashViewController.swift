@@ -14,7 +14,7 @@ class SplashScreenViewController : UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        doAfter(delayInSec: 3, action: {
+        doAfter(delayInSec: 2, action: {
             self.goTo()
         })
     }

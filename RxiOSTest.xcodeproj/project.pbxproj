@@ -52,10 +52,10 @@
 		54ABF3B923F292C50019055A /* AlertExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54ABF3B823F292C50019055A /* AlertExtension.swift */; };
 		54ABF3BA23F2BD300019055A /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 54ABF3BC23F2BD300019055A /* Localizable.strings */; };
 		54ABF3BF23F2BE5C0019055A /* CardDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54ABF3BE23F2BE5C0019055A /* CardDetailViewController.swift */; };
-		54ABF3C123F2BE7D0019055A /* CardDetailScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 54ABF3C023F2BE7D0019055A /* CardDetailScreen.storyboard */; };
 		54ABF3C323F2CBAF0019055A /* CardDetailPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54ABF3C223F2CBAF0019055A /* CardDetailPresenter.swift */; };
 		54ABF3C523F2CBB90019055A /* CardDetailRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54ABF3C423F2CBB90019055A /* CardDetailRouter.swift */; };
 		54ABF3C723F2CBC50019055A /* CardDetailInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54ABF3C623F2CBC50019055A /* CardDetailInteractor.swift */; };
+		54ABF3CD23F2DDAB0019055A /* CardDetailScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 54ABF3CF23F2DDAB0019055A /* CardDetailScreen.storyboard */; };
 		BE2CDE0219D40C98E38357F3 /* Pods_RxiOSTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 056691270ADC00A89A5B80B5 /* Pods_RxiOSTest.framework */; };
 /* End PBXBuildFile section */
 
@@ -131,10 +131,13 @@
 		54ABF3B823F292C50019055A /* AlertExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertExtension.swift; sourceTree = "<group>"; };
 		54ABF3BB23F2BD300019055A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		54ABF3BE23F2BE5C0019055A /* CardDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardDetailViewController.swift; sourceTree = "<group>"; };
-		54ABF3C023F2BE7D0019055A /* CardDetailScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = CardDetailScreen.storyboard; sourceTree = "<group>"; };
 		54ABF3C223F2CBAF0019055A /* CardDetailPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardDetailPresenter.swift; sourceTree = "<group>"; };
 		54ABF3C423F2CBB90019055A /* CardDetailRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardDetailRouter.swift; sourceTree = "<group>"; };
 		54ABF3C623F2CBC50019055A /* CardDetailInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardDetailInteractor.swift; sourceTree = "<group>"; };
+		54ABF3C823F2DD010019055A /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/MainScreen.strings; sourceTree = "<group>"; };
+		54ABF3CA23F2DD010019055A /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/Localizable.strings; sourceTree = "<group>"; };
+		54ABF3CE23F2DDAB0019055A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/CardDetailScreen.storyboard; sourceTree = "<group>"; };
+		54ABF3D123F2DDB00019055A /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/CardDetailScreen.strings; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -302,7 +305,7 @@
 				547D691F23F1699900DD2FF6 /* MainScreen.storyboard */,
 				547D692423F1699A00DD2FF6 /* LaunchScreen.storyboard */,
 				547D696E23F198E900DD2FF6 /* SplashScreen.storyboard */,
-				54ABF3C023F2BE7D0019055A /* CardDetailScreen.storyboard */,
+				54ABF3CF23F2DDAB0019055A /* CardDetailScreen.storyboard */,
 			);
 			path = Storyboard;
 			sourceTree = "<group>";
@@ -515,6 +518,7 @@
 			knownRegions = (
 				en,
 				Base,
+				ru,
 			);
 			mainGroup = 547D690D23F1699900DD2FF6;
 			productRefGroup = 547D691723F1699900DD2FF6 /* Products */;
@@ -534,7 +538,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				54ABF3BA23F2BD300019055A /* Localizable.strings in Resources */,
-				54ABF3C123F2BE7D0019055A /* CardDetailScreen.storyboard in Resources */,
+				54ABF3CD23F2DDAB0019055A /* CardDetailScreen.storyboard in Resources */,
 				547D692623F1699A00DD2FF6 /* LaunchScreen.storyboard in Resources */,
 				547D696F23F198E900DD2FF6 /* SplashScreen.storyboard in Resources */,
 				547D692323F1699A00DD2FF6 /* Assets.xcassets in Resources */,
@@ -698,6 +702,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				547D692023F1699900DD2FF6 /* Base */,
+				54ABF3C823F2DD010019055A /* ru */,
 			);
 			name = MainScreen.storyboard;
 			sourceTree = "<group>";
@@ -714,8 +719,18 @@
 			isa = PBXVariantGroup;
 			children = (
 				54ABF3BB23F2BD300019055A /* en */,
+				54ABF3CA23F2DD010019055A /* ru */,
 			);
 			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+		54ABF3CF23F2DDAB0019055A /* CardDetailScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				54ABF3CE23F2DDAB0019055A /* Base */,
+				54ABF3D123F2DDB00019055A /* ru */,
+			);
+			name = CardDetailScreen.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -725,6 +740,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -785,6 +801,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";

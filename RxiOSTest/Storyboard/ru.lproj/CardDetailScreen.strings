@@ -1,0 +1,12 @@
+
+/* Class = "UILabel"; text = "Title"; ObjectID = "DRc-XB-7Yi"; */
+"DRc-XB-7Yi.text" = "Заголовок";
+
+/* Class = "UILabel"; text = "Subtitle"; ObjectID = "JhR-jk-x6j"; */
+"JhR-jk-x6j.text" = "Описание";
+
+/* Class = "UINavigationItem"; title = "Card Info"; ObjectID = "dKG-nE-ZNz"; */
+"dKG-nE-ZNz.title" = "Информация о карте";
+
+/* Class = "UILabel"; text = "Illustrated title"; ObjectID = "vmt-oi-3do"; */
+"vmt-oi-3do.text" = "Авторство:";
