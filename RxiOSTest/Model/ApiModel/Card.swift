@@ -10,12 +10,12 @@ import Foundation
 
 struct Card: Codable {
     
-    let id: String?
-    let name: String?
-    let typeLine: String?
-    let oracleText: String?
-    let artist: String?
-    let imageUris: CardImageUri?
+    var id: String?
+    var name: String?
+    var typeLine: String?
+    var oracleText: String?
+    var artist: String?
+    var imageUris: CardImageUri?
     
     enum CodingKeys: String, CodingKey {
         
@@ -27,7 +27,7 @@ struct Card: Codable {
         case imageUris = "image_uris"
     }
     
-    init(from decoder: Decoder)throws {
+    init(from decoder: Decoder) throws {
     
         let values = try decoder.container(keyedBy: CodingKeys.self)
         
@@ -38,4 +38,6 @@ struct Card: Codable {
         artist = try values.decodeIfPresent(String.self, forKey: .artist)
         imageUris = try values.decodeIfPresent(CardImageUri.self, forKey: .imageUris)
     }
+    
+    init() {}
 }

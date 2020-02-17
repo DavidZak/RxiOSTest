@@ -10,7 +10,8 @@ import Foundation
 import RxSwift
 
 class MainInteractor: BaseInteractor<Void> {
-    func loadCards(requestBody: GetCardsBody) -> Observable<Cards> {
-        return CardsService.loadCards(requestBody: requestBody)
+    func loadCards(requestBody: GetCardsBody) -> Observable<[Card]> {
+        return CardsService.synchronizeCards(requestBody: requestBody)
+            .flatMap { CardsService.loadCards() }
     }
 }

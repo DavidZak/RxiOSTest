@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		541C9BE923FA8B4800D12B96 /* EncodableExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 541C9BE823FA8B4800D12B96 /* EncodableExtension.swift */; };
+		547A0E9523F582C600F28364 /* RxiOSTest.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 547A0E9323F582C600F28364 /* RxiOSTest.xcdatamodeld */; };
+		547A0E9723F5841400F28364 /* CoreDataTransport.swift in Sources */ = {isa = PBXBuildFile; fileRef = 547A0E9623F5841400F28364 /* CoreDataTransport.swift */; };
 		547D691A23F1699900DD2FF6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 547D691923F1699900DD2FF6 /* AppDelegate.swift */; };
 		547D691C23F1699900DD2FF6 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 547D691B23F1699900DD2FF6 /* SceneDelegate.swift */; };
 		547D692123F1699900DD2FF6 /* MainScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 547D691F23F1699900DD2FF6 /* MainScreen.storyboard */; };
@@ -80,6 +83,9 @@
 		056691270ADC00A89A5B80B5 /* Pods_RxiOSTest.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RxiOSTest.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		05DD0FA673995D149A6A66B6 /* Pods-RxiOSTest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RxiOSTest.release.xcconfig"; path = "Target Support Files/Pods-RxiOSTest/Pods-RxiOSTest.release.xcconfig"; sourceTree = "<group>"; };
 		14607EBA76714973FA2CDF40 /* Pods-RxiOSTest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RxiOSTest.debug.xcconfig"; path = "Target Support Files/Pods-RxiOSTest/Pods-RxiOSTest.debug.xcconfig"; sourceTree = "<group>"; };
+		541C9BE823FA8B4800D12B96 /* EncodableExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EncodableExtension.swift; sourceTree = "<group>"; };
+		547A0E9423F582C600F28364 /* RxiOSTest.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = RxiOSTest.xcdatamodel; sourceTree = "<group>"; };
+		547A0E9623F5841400F28364 /* CoreDataTransport.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataTransport.swift; sourceTree = "<group>"; };
 		547D691623F1699900DD2FF6 /* RxiOSTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RxiOSTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		547D691923F1699900DD2FF6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		547D691B23F1699900DD2FF6 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -220,6 +226,7 @@
 				547D692223F1699A00DD2FF6 /* Assets.xcassets */,
 				547D692723F1699A00DD2FF6 /* Info.plist */,
 				54ABF3BC23F2BD300019055A /* Localizable.strings */,
+				547A0E9323F582C600F28364 /* RxiOSTest.xcdatamodeld */,
 			);
 			path = RxiOSTest;
 			sourceTree = "<group>";
@@ -337,6 +344,7 @@
 				547D698923F1ACC000DD2FF6 /* StringExtension.swift */,
 				54ABF3B423F2919B0019055A /* UIViewControllerExtension.swift */,
 				54ABF3B823F292C50019055A /* AlertExtension.swift */,
+				541C9BE823FA8B4800D12B96 /* EncodableExtension.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -398,6 +406,7 @@
 			children = (
 				547D699423F1AF8100DD2FF6 /* RestTransport.swift */,
 				547D699623F1AF8C00DD2FF6 /* JsonDecode.swift */,
+				547A0E9623F5841400F28364 /* CoreDataTransport.swift */,
 			);
 			path = Transport;
 			sourceTree = "<group>";
@@ -635,6 +644,7 @@
 				547D69A123F1B26100DD2FF6 /* RequestBodyList.swift in Sources */,
 				547D697823F1AA7400DD2FF6 /* CardTableCell.swift in Sources */,
 				54ABF3B723F291AF0019055A /* PreloaderView.swift in Sources */,
+				547A0E9523F582C600F28364 /* RxiOSTest.xcdatamodeld in Sources */,
 				547D696A23F197F500DD2FF6 /* SplashViewController.swift in Sources */,
 				54ABF3B523F2919B0019055A /* UIViewControllerExtension.swift in Sources */,
 				547D695F23F1829800DD2FF6 /* BaseViewController.swift in Sources */,
@@ -642,6 +652,7 @@
 				547D698823F1ABC900DD2FF6 /* Constants.swift in Sources */,
 				547D695923F1752B00DD2FF6 /* BaseRouter.swift in Sources */,
 				547D698623F1AB6900DD2FF6 /* KFImageView.swift in Sources */,
+				541C9BE923FA8B4800D12B96 /* EncodableExtension.swift in Sources */,
 				547D694B23F16AD100DD2FF6 /* Router.swift in Sources */,
 				547D695323F16C0000DD2FF6 /* ViewBinding.swift in Sources */,
 				547D696623F197B700DD2FF6 /* MainInteractor.swift in Sources */,
@@ -651,6 +662,7 @@
 				547D696823F197C200DD2FF6 /* MainPresenter.swift in Sources */,
 				547D697523F1A6DD00DD2FF6 /* RxExtension.swift in Sources */,
 				54ABF3BF23F2BE5C0019055A /* CardDetailViewController.swift in Sources */,
+				547A0E9723F5841400F28364 /* CoreDataTransport.swift in Sources */,
 				547D691A23F1699900DD2FF6 /* AppDelegate.swift in Sources */,
 				547D695123F16B7100DD2FF6 /* View.swift in Sources */,
 				547D699A23F1AFB400DD2FF6 /* RequestBody.swift in Sources */,
@@ -1010,6 +1022,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		547A0E9323F582C600F28364 /* RxiOSTest.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				547A0E9423F582C600F28364 /* RxiOSTest.xcdatamodel */,
+			);
+			currentVersion = 547A0E9423F582C600F28364 /* RxiOSTest.xcdatamodel */;
+			path = RxiOSTest.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 547D690E23F1699900DD2FF6 /* Project object */;
 }

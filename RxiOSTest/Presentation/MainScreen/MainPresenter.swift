@@ -37,7 +37,7 @@ class MainPresenter: BasePresenter<Void> {
         dispose(mainInteractor.loadCards(requestBody: GetCardsBody(query: query))
             .subscribe(onNext: { [weak self] cards in
                 self?.progress.onNext(.LoadCompleted)
-                self?.cards.accept(cards.data!)
+                self?.cards.accept(cards)
             }, onError: { [weak self] error in
                 self?.error.onNext(error)
             })
